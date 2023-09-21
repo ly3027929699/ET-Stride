@@ -1,0 +1,72 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <Import Project="..\..\ET.Build.props" />
+    <PropertyGroup>
+        <TargetFrameworks>$(ServerTargetFrameworks)</TargetFrameworks>
+        <LangVersion>$(ClientLanguageVersion)</LangVersion>
+        <OutputType>Exe</OutputType>
+        <ImplicitUsings>false</ImplicitUsings>
+        <Nullable>disable</Nullable>
+        <RootNamespace>ET</RootNamespace>
+        <PackageId>Apps.Tool</PackageId>
+        <AssemblyName>Tool</AssemblyName>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+        <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+      <OutputPath>..\..\Bin\</OutputPath>
+      <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+      <DefineConstants>DOTNET</DefineConstants>
+      <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+      <OutputPath>..\..\Bin\</OutputPath>
+      <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+      <DefineConstants>DOTNET</DefineConstants>
+      <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    </PropertyGroup>
+    
+    <ItemGroup>
+        <Compile Include="..\..\Unity\Assets\Mono\Core\**\*.cs">
+            <Link>Core\%(RecursiveDir)%(FileName)%(Extension)</Link>
+        </Compile>
+        
+        <Compile Include="..\..\Unity\Assets\Scripts\Codes\Model\Share\Module\Config\**\*.cs">
+            <Link>Module\Config\%(RecursiveDir)%(FileName)%(Extension)</Link>
+        </Compile>
+
+        <Compile Include="..\..\Unity\Assets\Scripts\Codes\Model\Share\Module\Log\**\*.cs">
+            <Link>Module\Log\%(RecursiveDir)%(FileName)%(Extension)</Link>
+        </Compile>
+
+        <Compile Include="..\..\Unity\Assets\Scripts\Core\Network\OpcodeRangeDefine.cs">
+            <Link>Module\Message\OpcodeRangeDefine.cs</Link>
+        </Compile>
+    </ItemGroup>
+    
+    <ItemGroup>
+      <None Update="Template.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+    
+    <ItemGroup>
+      <ProjectReference Include="..\..\Client\ThirdParty\ThirdParty.csproj" />
+      <ProjectReference Include="..\..\DotNet\Core\DotNet.Core.csproj" />
+      <ProjectReference Include="..\..\DotNet\ThirdParty\DotNet.ThirdParty.csproj" />
+    </ItemGroup>
+    
+    <ItemGroup>
+        <PackageReference Include="EPPlus" Version="6.2.9" />
+        <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.7.0" />
+        <PackageReference Include="MongoDB.Bson" Version="2.21.0" />
+        <PackageReference Include="MongoDB.Driver" Version="2.21.0" />
+        <PackageReference Include="MongoDB.Driver.Core" Version="2.21.0" />
+    </ItemGroup>
+
+</Project>

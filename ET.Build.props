@@ -1,0 +1,8 @@
+<Project>
+    <PropertyGroup>
+        <ClientTargetFrameworks>.net8.0</ClientTargetFrameworks>
+        <ServerTargetFrameworks>.net8.0</ServerTargetFrameworks>
+        <ClientLanguageVersion>12</ClientLanguageVersion>
+        <ServerLanguageVersion>12</ServerLanguageVersion>
+    </PropertyGroup>
+</Project>

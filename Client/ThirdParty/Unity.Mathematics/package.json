@@ -1,0 +1,23 @@
+{
+  "name": "com.unity.mathematics",
+  "displayName": "Mathematics",
+  "version": "1.3.1",
+  "unity": "2018.3",
+  "description": "Unity's C# SIMD math library providing vector types and math functions with a shader like syntax.",
+  "keywords": [
+    "unity"
+  ],
+  "dependencies": {},
+  "_upm": {
+    "changelog": "### Added\n* Added `math.square` to compute the square (x * x).\n* Added `math.orthonormal_basis` to compute an orthonormal basis from a single unit length vector.\n* Added `math.sign` for int, int2, int3 and int4.\n* Added `math.chgsign` for float, float2, float3, and float4.\n* Added `math.Euler` to convert a quaternion to Euler angles.\n* Added `math.angle` to compute the angle between two unit quaternions.\n* Added `math.rotation` to extract a quaternion rotation from a float3x3 (that may have scale).\n* Added `math.mulScale` to scale columns of a float3x3 with scaling coefficients in a float3.\n* Added `math.scaleMul` to scale rows of a float3x3 with scaling coefficients in a float3.\n* Added `AffineTransform` type.\n* Added `PI2`, `PIHALF`, `TAU`, `TODEGREES` and `TORADIANS` constants.\n\n### Changed\n* `asfloat(uint)`, `asuint(float)`, `asint(float)` and other related methods are now faster in mono without Burst. Other methods which use these will see a performance improvement.\n* Modified `quaternion.nlerp` to be branchless.\n* More descriptive parameter names for many methods in `math` class.\n* Made `Il2CppEagerStaticClassConstructionAttribute` internal to avoid conflicts with other definitions outside of the package."
+  },
+  "upmCi": {
+    "footprint": "ca53801e81ed8dbcd95b8e5b73fef97c015692d7"
+  },
+  "documentationUrl": "https://docs.unity3d.com/Packages/com.unity.mathematics@1.3/manual/index.html",
+  "repository": {
+    "url": "https://github.com/Unity-Technologies/Unity.Mathematics.git",
+    "type": "git",
+    "revision": "c4f37031a75eb8afb8dfaf5d68fbcce226c70749"
+  }
+}

@@ -1,0 +1,5 @@
+<Project>
+  <PropertyGroup>
+    <NoWarn>0169,0649,3021,8981,9192,9193</NoWarn>
+  </PropertyGroup>
+</Project>

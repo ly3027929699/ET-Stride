@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <Import Project="..\..\ET.Build.props" />
+    <PropertyGroup>
+        <TargetFrameworks>$(ServerTargetFrameworks)</TargetFrameworks>
+        <Nullable>disable</Nullable>
+        <LangVersion>$(ServerLanguageVersion)</LangVersion>
+        <RootNamespace>ET</RootNamespace>
+        <AssemblyName>ThirdParty</AssemblyName>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+        <SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+        <DefineConstants>DOTNET;UNITY_DOTSPLAYER</DefineConstants>
+        <OutputPath>..\..\Bin\</OutputPath>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+        <Optimize>true</Optimize>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+        <DefineConstants>DOTNET;UNITY_DOTSPLAYER</DefineConstants>
+        <OutputPath>..\..\Bin\</OutputPath>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    </PropertyGroup>
+</Project>

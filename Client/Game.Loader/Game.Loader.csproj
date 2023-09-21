@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <Import Project="..\..\ET.Build.props" />
+    <PropertyGroup>
+        <TargetFrameworks>$(ClientTargetFrameworks)</TargetFrameworks>
+        <LangVersion>$(ClientLanguageVersion)</LangVersion>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+      <DefineConstants>TRACE;UNITY_EDITOR</DefineConstants>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\Share\Share.SourceGenerator\Share.SourceGenerator.csproj" />
+        <ProjectReference Include="..\ThirdParty\ThirdParty.csproj" />
+        <ProjectReference Include="..\Game.Core\Game.Core.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="MongoDB.Bson" Version="2.21.0" />
+      <PackageReference Include="MongoDB.Driver.Core" Version="2.21.0" />
+      <PackageReference Include="Stride" Version="4.1.0.1898" />
+      <PackageReference Include="Stride.Core" Version="4.1.0.1898" />
+      <PackageReference Include="Stride.Core.Mathematics" Version="4.1.0.1898" />
+      <PackageReference Include="Stride.Engine" Version="4.1.0.1898" />
+      <PackageReference Include="Stride.Physics" Version="4.1.0.1898" />
+    </ItemGroup>
+
+</Project>

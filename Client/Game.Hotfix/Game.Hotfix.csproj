@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <Import Project="..\..\ET.Build.props" />
+    <PropertyGroup>
+        <TargetFrameworks>$(ClientTargetFrameworks)</TargetFrameworks>
+        <LangVersion>$(ClientLanguageVersion)</LangVersion>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <Nullable>annotations</Nullable>
+    </PropertyGroup>
+
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\Share\Share.SourceGenerator\Share.SourceGenerator.csproj" />
+        <ProjectReference Include="..\Game.Loader\Game.Loader.csproj" />
+        <ProjectReference Include="..\ThirdParty\ThirdParty.csproj" />
+        <ProjectReference Include="..\Game.Core\Game.Core.csproj" />
+        <ProjectReference Include="..\Game.Model\Game.Model.csproj" />
+    </ItemGroup>
+
+
+    <ItemGroup>
+      <PackageReference Include="MongoDB.Driver" Version="2.21.0" />
+        <PackageReference Include="Stride" Version="4.1.0.1898" />
+        <PackageReference Include="Stride.Core" Version="4.1.0.1898" />
+        <PackageReference Include="Stride.Core.Mathematics" Version="4.1.0.1898" />
+        <PackageReference Include="Stride.Engine" Version="4.1.0.1898" />
+        <PackageReference Include="Stride.Physics" Version="4.1.0.1898" />
+        <PackageReference Include="Stride.UI" Version="4.1.0.1898" />
+    </ItemGroup>
+
+
+    <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+        <Copy SourceFiles="$(TargetDir)$(TargetName).dll" DestinationFiles="..\Game\Resources\Dlls\$(TargetName).dll.bytes"/>
+        <Copy SourceFiles="$(TargetDir)$(TargetName).pdb" DestinationFiles="..\Game\Resources\Dlls\$(TargetName).pdb.bytes"/>
+    </Target>
+</Project>

@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <Import Project="..\..\ET.Build.props"/>
+    <PropertyGroup>
+        <TargetFrameworks>$(ClientTargetFrameworks)</TargetFrameworks>
+        <LangVersion>$(ClientLanguageVersion)</LangVersion>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+        <DefineConstants>TRACE;UNITY</DefineConstants>
+    </PropertyGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\ThirdParty\ThirdParty.csproj"/>
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="CommandLineParser" Version="2.9.1"/>
+        <PackageReference Include="MemoryPack" Version="1.9.16" />
+        <PackageReference Include="MongoDB.Bson" Version="2.21.0"/>
+        <PackageReference Include="MongoDB.Driver.Core" Version="2.21.0"/>
+        <PackageReference Include="SharpZipLib" Version="1.4.2" />
+        <PackageReference Include="NLog" Version="5.2.4"/>
+    </ItemGroup>
+
+</Project>
