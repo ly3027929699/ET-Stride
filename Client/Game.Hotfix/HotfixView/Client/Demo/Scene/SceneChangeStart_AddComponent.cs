@@ -1,4 +1,6 @@
 using System;
+using Stride.Core.Mathematics;
+using Stride.Engine;
 using UnityEngine;
 
 namespace ET.Client
@@ -21,6 +23,12 @@ namespace ET.Client
                 //await SceneManager.LoadSceneAsync(currentScene.Name);
 
                 currentScene.AddComponent<OperaComponent>();
+                if (currentScene.Name == "Map1")
+                {
+                    TransformComponent transform = GlobelEngineScript.Default.Camera.Entity.Transform;
+                    transform.Position = new Vector3(0f,14.015f,13.635f);
+                    transform.Rotation = Quaternion.RotationX(MathUtil.DegreesToRadians(-43));
+                }
             }
             catch (Exception e)
             {

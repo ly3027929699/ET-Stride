@@ -11,7 +11,7 @@ namespace ET.Client
         {
             Unit unit = args.Unit;
             // Unit View层
-            string assetsName = $"Assets/Bundles/Unit/Unit.prefab";
+            string assetsName = $"Bundles/Units/Unit";
             ResourcesLoaderComponent resourcesLoaderComponent = scene.GetComponent<ResourcesLoaderComponent>();
             if (resourcesLoaderComponent == null)
             {

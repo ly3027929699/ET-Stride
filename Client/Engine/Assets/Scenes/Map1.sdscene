@@ -41,6 +41,7 @@ Hierarchy:
         - ref!! 1c16ce32-59b1-4691-9465-974111982f67
         - ref!! 25bc5b70-bc98-4f51-b245-56c77af74122
         - ref!! 0ceaf263-3374-437f-9232-ef205569f93d
+        - ref!! 1fa61c90-eb26-456c-b6d0-52c24dca8452
     Parts:
         -   Entity:
                 Id: 0157316b-840c-4bb8-aed8-aaeee66c7b90
@@ -1041,6 +1042,22 @@ Hierarchy:
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}
                         Children:
                             cfce75d38d66e24fae426d1f40aa4f8a: ref!! 785c5d53-ded1-48b6-9eb9-f410ad281db2
+        -   Entity:
+                Id: 1fa61c90-eb26-456c-b6d0-52c24dca8452
+                Name: Camera
+                Components:
+                    029dbb22775955116f8dbef32e6e815c: !TransformComponent
+                        Id: 70b712bb-6900-46dd-9f6f-8c4d87cf3505
+                        Position: {X: 0.0, Y: 14.015202, Z: 13.635266}
+                        Rotation: {X: -0.36677507, Y: 0.0, Z: 0.0, W: 0.93030965}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    67b7a5d0fb73145a63196e4f99d89bd9: !CameraComponent
+                        Id: 054d2af9-1c48-49d2-8567-ec4ba7f95d79
+                        Enabled: false
+                        Name: null
+                        Projection: Perspective
+                        Slot: 948f3642-2e48-4681-bd15-1f05083762cc
         -   Entity:
                 Id: 20e5ca1b-d1cd-490d-af60-53f9b7208b46
                 Name: Wall0x2x5
