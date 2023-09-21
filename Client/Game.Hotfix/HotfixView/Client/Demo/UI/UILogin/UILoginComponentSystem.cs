@@ -13,7 +13,7 @@ namespace ET.Client
         {
             UIPage uiPage = self.GetParent<UI>().GameObject.Get<Stride.Engine.UIComponent>().Page;
             self.loginBtn = uiPage.RootElement.FindVisualChildOfType<Button>("LoginBtn");
-            self.loginBtn.Click += (sender, args) => self.OnLogin();
+            self.loginBtn.Click += (_, _) => self.OnLogin();
 
             self.account = uiPage.RootElement.FindVisualChildOfType<EditText>("Account");
             self.password = uiPage.RootElement.FindVisualChildOfType<EditText>("Password");

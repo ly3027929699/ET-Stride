@@ -1,0 +1,37 @@
+!Package
+SerializedVersion: {Assets: 3.1.0.0}
+Meta:
+    Name: Engine.Windows
+    Version: 1.0.0
+    Authors: []
+    Owners: []
+    Dependencies: null
+AssetFolders:
+    -   Path: !dir Assets
+ResourceFolders:
+    - !dir Resources
+OutputGroupDirectories: {}
+ExplicitFolders: []
+Bundles: []
+TemplateFolders: []
+RootAssets:
+    - 2b506f02-be29-4be5-a20f-3606140e47df:Bundles/Configs/AIConfigCategory
+    - 367a5891-6a77-41be-93a7-030fcd0aa277:Bundles/UI/UIPages/UILobby
+    - 3964dfdc-bf97-4ac1-863e-b1ac768a0f91:Bundles/UI/UIPages/UIHelp
+    - 4e13eb30-76f5-488a-bfa1-dee682eff9fa:Res/Dlls/Game.Hotfix.dll
+    - 524a7ea6-fc5d-432a-8c81-f76a2f99b0a4:Bundles/Units/Unit
+    - 546f0b68-d8f4-40be-9b08-a39e3c0c15ee:Bundles/UI/UIPages/UILoading
+    - 5bcffbc4-be63-4b00-b1ee-5fc1059b4a38:Res/Dlls/Game.Hotfix.pdb
+    - 7503f88d-8a74-4f26-a15f-5434b8c2e1ab:Res/GlobalConfig
+    - 94e685d5-739e-4af5-8bec-8cd6cf1f1042:Bundles/UI/UIPrefabs/UIHelp
+    - 99c48216-44bb-4569-b1db-fcdb123bcdea:Res/Dlls/Game.Model.pdb
+    - a52accb3-8330-4849-b362-f8af1ca2bffb:Bundles/UI/UIPages/UILogin
+    - ac08c6e4-24f9-408c-af47-816fc11d27c9:Scenes/Map1
+    - c48ada57-fb32-4913-a098-bf9f3302fd69:Bundles/Configs/StartConfig/Localhost/StartZoneConfigCategory
+    - cab024aa-4151-49e8-a66b-b8fe14ba5436:Bundles/Configs/UnitConfigCategory
+    - cd51c24d-4cfe-49a1-ac92-825e788400fb:Res/Dlls/Game.Model.dll
+    - ce58ce0c-ad2a-4bae-8d14-7bbc08dcf0b3:Bundles/Configs/StartConfig/Localhost/StartSceneConfigCategory
+    - d3e42aa6-7e14-4e0c-a0f4-5764dde60b76:Bundles/UI/UIPrefabs/UILobby
+    - de69a200-bcfd-447d-ac42-9d9252eb2180:Bundles/UI/UIPrefabs/UILogin
+    - e7cded48-1e52-4f90-884d-88cb7ae69f4d:Bundles/Configs/StartConfig/Localhost/StartMachineConfigCategory
+    - ffd7e901-4e99-4aa2-86ca-6d14564e280b:Bundles/Configs/StartConfig/Localhost/StartProcessConfigCategory

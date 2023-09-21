@@ -1,0 +1,136 @@
+!SceneAsset
+Id: 8611b1fa-98a1-47b1-a20d-5b4538e8608d
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+ChildrenIds: []
+Offset: {X: 0.0, Y: 0.0, Z: 0.0}
+Hierarchy:
+    RootParts:
+        - ref!! 825207be-5f41-4820-b481-dd33c3891d27
+        - ref!! 3a9bb75e-4960-470e-91b9-8f81bcf82963
+        - ref!! c6cf2419-9e82-4eb7-9250-63287676c053
+        - ref!! c146d91a-d62c-435a-aec2-19d2c1504c68
+        - ref!! 7473e749-6892-4987-a7d8-e30771517174
+    Parts:
+        -   Entity:
+                Id: 372bd394-0800-4b17-80a2-a12fe0fe62b1
+                Name: Mid
+                Components:
+                    dcf5864a700a84fe1f2cdb52f041bed8: !TransformComponent
+                        Id: e0b2c6fd-00e1-4e44-a9cc-5c16c8e9c092
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+        -   Entity:
+                Id: 3a9bb75e-4960-470e-91b9-8f81bcf82963
+                Name: MainCamera
+                Components:
+                    be1fdfd9b19d5a62857b70c8a20678b6: !TransformComponent
+                        Id: b977b47d-62b7-48cb-8250-72f29c9bdf48
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    9d793706f8719c407877491c3223771f: !CameraComponent
+                        Id: 99cfb089-793b-4749-bfbc-789890fd2eb0
+                        Name: null
+                        Projection: Perspective
+                        Slot: 948f3642-2e48-4681-bd15-1f05083762cc
+                    3d9ddbe69f4970452e8789226cf3236b: !ET.BasicCameraController,Engine
+                        Id: be963ff5-a754-4b3d-b0d4-134083a79771
+                        Gamepad: false
+                        KeyboardMovementSpeed: {X: 5.0, Y: 5.0, Z: 5.0}
+                        TouchMovementSpeed: {X: 0.7, Y: 0.7, Z: 0.3}
+                        SpeedFactor: 5.0
+                        KeyboardRotationSpeed: {X: 3.0, Y: 3.0}
+                        MouseRotationSpeed: {X: 1.0, Y: 1.0}
+                        TouchRotationSpeed: {X: 1.0, Y: 0.7}
+        -   Entity:
+                Id: 55a2be94-c02a-4584-9032-dcd02a60b628
+                Name: High
+                Components:
+                    dcf5864a700a84fe1f2cdb52f041bed8: !TransformComponent
+                        Id: f5ac59b2-2b8d-4efe-842b-ad752f90c40e
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+        -   Entity:
+                Id: 7473e749-6892-4987-a7d8-e30771517174
+                Name: UI
+                Components:
+                    52551c3aaf4ce8f92a0af3a0c00eea7d: !TransformComponent
+                        Id: ef06951b-5716-4fc0-b527-2eb666c035e7
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            8fd5859fedf064d7774ca2c006028777: ref!! 417583e9-dbca-426d-9667-45ff0fe0e39c
+                            5a7836af6d92710c9e11e26ab502ebd2: ref!! fba1a729-8dcf-48dc-a9ad-888a2594366b
+                            5cd60cbb6d9e4bd74aa9e9d0a4deb385: ref!! e0b2c6fd-00e1-4e44-a9cc-5c16c8e9c092
+                            a875b56c736c92918b4e607a372c6ae2: ref!! f5ac59b2-2b8d-4efe-842b-ad752f90c40e
+                    5ce18fb693df8f88da7ac4b4dd574337: !ET.UILayerHodler,Engine
+                        Id: ebd7df87-6778-467e-bf8d-6164b1ab579d
+                        Hidden: ref!! 417583e9-dbca-426d-9667-45ff0fe0e39c
+                        Low: ref!! e0b2c6fd-00e1-4e44-a9cc-5c16c8e9c092
+                        Mid: ref!! f5ac59b2-2b8d-4efe-842b-ad752f90c40e
+                        High: ref!! fba1a729-8dcf-48dc-a9ad-888a2594366b
+        -   Entity:
+                Id: 825207be-5f41-4820-b481-dd33c3891d27
+                Name: Init
+                Components:
+                    2c868422858c4ab2951da80cf5d08601: !TransformComponent
+                        Id: ab2dde34-46e1-4c3c-9a61-dc4870c12099
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    2bbde38ba0ca62edb04810b7323b35dc: !ET.Init,Engine
+                        Id: 1983fb5b-a89b-40d3-a7e3-62790f13f193
+                    b36a46bfac2c85a7d97195cc92a62b09: !ET.GlobelEngineScript,Engine
+                        Id: d63bd867-bbe3-4bdb-95ba-1ba49ceca7a1
+                        Global: null
+                        Unit: null
+                        UI: null
+                        Camera: null
+        -   Entity:
+                Id: b516dc00-4c8d-48c0-8c80-9c920e049676
+                Name: Low
+                Components:
+                    dcf5864a700a84fe1f2cdb52f041bed8: !TransformComponent
+                        Id: fba1a729-8dcf-48dc-a9ad-888a2594366b
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+        -   Entity:
+                Id: c146d91a-d62c-435a-aec2-19d2c1504c68
+                Name: Unit
+                Components:
+                    df2e1b36ab768b2d2b3028fe7073fe26: !TransformComponent
+                        Id: af49370c-3d55-4e93-a845-7fe6102b929b
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+        -   Entity:
+                Id: c6cf2419-9e82-4eb7-9250-63287676c053
+                Name: Global
+                Components:
+                    0ac0f7f1a94ff38e45cf93f8f377f675: !TransformComponent
+                        Id: 5dd5405a-c331-4b7c-a18f-943b367eb863
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+        -   Entity:
+                Id: d3d69a9f-ef80-4530-916e-d8bcb9ab8631
+                Name: Hidden
+                Components:
+                    dcf5864a700a84fe1f2cdb52f041bed8: !TransformComponent
+                        Id: 417583e9-dbca-426d-9667-45ff0fe0e39c
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}

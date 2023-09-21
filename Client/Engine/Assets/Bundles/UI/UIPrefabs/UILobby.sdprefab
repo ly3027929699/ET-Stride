@@ -1,0 +1,23 @@
+!PrefabAsset
+Id: d3e42aa6-7e14-4e0c-a0f4-5764dde60b76
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+Hierarchy:
+    RootParts:
+        - ref!! c856a86a-9c4d-4662-9f8c-bd918352061e
+    Parts:
+        -   Entity:
+                Id: c856a86a-9c4d-4662-9f8c-bd918352061e
+                Name: UILobby
+                Components:
+                    d250ea26da16cd89ab5a3c81b2e1f196: !TransformComponent
+                        Id: 5e3bf10f-33c1-427a-827a-9f74fdf0ae3a
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    3611104e90ab8c421e7c24071e5e1542: !UIComponent
+                        Id: c5b8e237-c3db-45e7-b7bb-e18c62011e21
+                        Page: 367a5891-6a77-41be-93a7-030fcd0aa277:Bundles/UI/UIPages/UILobby
+                        Resolution: {X: 1280.0, Y: 720.0, Z: 1000.0}
+                        Size: {X: 1.28, Y: 0.72, Z: 1.0}

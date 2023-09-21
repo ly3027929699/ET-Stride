@@ -16,12 +16,9 @@
         <ProjectReference Include="..\ThirdParty\ThirdParty.csproj"/>
     </ItemGroup>
     <ItemGroup>
-        <PackageReference Include="CommandLineParser" Version="2.9.1"/>
-        <PackageReference Include="MemoryPack" Version="1.9.16" />
-        <PackageReference Include="MongoDB.Bson" Version="2.21.0"/>
-        <PackageReference Include="MongoDB.Driver.Core" Version="2.21.0"/>
-        <PackageReference Include="SharpZipLib" Version="1.4.2" />
-        <PackageReference Include="NLog" Version="5.2.4"/>
+        <Analyzer Include="..\..\Share\Share.SourceGenerator\bin\Debug\Share.SourceGenerator.dll"/>
+    </ItemGroup>
+    <ItemGroup>
     </ItemGroup>
 
 </Project>

@@ -12,7 +12,7 @@ namespace ET
 
             foreach (Assembly ass in args)
             {
-                foreach (Type type in ass.GetTypes())
+                foreach (Type type in ass.GetExportedTypes())
                 {
                     types[type.FullName] = type;
                 }

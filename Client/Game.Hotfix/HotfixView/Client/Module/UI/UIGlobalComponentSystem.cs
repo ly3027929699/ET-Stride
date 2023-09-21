@@ -11,14 +11,13 @@ namespace ET.Client
         [EntitySystem]
         public static void Awake(this UIGlobalComponent self)
         {
-            string globalUiName = "/Global/UI";
-            Stride.Engine.Entity? uiRoot = GlobelEngineScript.Default.GetEntity(globalUiName);
+            Stride.Engine.Entity? uiRoot = GlobelEngineScript.Default.UI;
             if (uiRoot == null)
-                throw new NullReferenceException($"can't find the entity named {globalUiName}");
+                throw new NullReferenceException($"can't find the entity named \"UI\"");
             
             UILayerHodler? uiLayerHodler = uiRoot.Get<UILayerHodler>();
             if (uiLayerHodler == null)
-                throw new NullReferenceException($"{globalUiName} can't find the component named {globalUiName}");
+                throw new NullReferenceException($"The root of ui can't find the component named {nameof(UILayerHodler)}");
             
             self.UILayers.Add((int)UILayer.Hidden, uiLayerHodler.Hidden);
             self.UILayers.Add((int)UILayer.Low, uiLayerHodler.Low);

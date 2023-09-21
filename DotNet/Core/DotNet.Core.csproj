@@ -32,12 +32,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="MemoryPack" Version="1.9.16" />
-        <PackageReference Include="MongoDB.Bson" Version="2.21.0" />
-        <PackageReference Include="MongoDB.Driver.Core" Version="2.21.0" />
-        <PackageReference Include="NLog" Version="5.2.4" />
-        <PackageReference Include="CommandLineParser" Version="2.9.1" />
-        <PackageReference Include="SharpZipLib" Version="1.4.2" />
     </ItemGroup>
 
     <ItemGroup>
@@ -53,9 +47,6 @@
         <ProjectReference Include="..\..\Client\ThirdParty\ThirdParty.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-        <Folder Include="Core\Serialize\" />
-    </ItemGroup>
 
 
 </Project>

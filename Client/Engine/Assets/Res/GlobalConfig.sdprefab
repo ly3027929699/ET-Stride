@@ -1,0 +1,23 @@
+!PrefabAsset
+Id: 7503f88d-8a74-4f26-a15f-5434b8c2e1ab
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+Hierarchy:
+    RootParts:
+        - ref!! 1d609b6f-26e8-46e1-b461-1f7a02d23d47
+    Parts:
+        -   Entity:
+                Id: 1d609b6f-26e8-46e1-b461-1f7a02d23d47
+                Name: GlobalConfig
+                Components:
+                    e31ebb7d6a9d15693d1e63848daf11d1: !TransformComponent
+                        Id: 2bbabfcb-6fe1-46aa-983e-23b8f406937d
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    d9307179dfb1a786a729de0ad170b58b: !ET.GlobalConfig,Engine
+                        Id: f702fa89-9c88-44ca-ae38-204b347211a5
+                        CodeMode: Client
+                        BuildType: Debug
+                        AppType: Demo

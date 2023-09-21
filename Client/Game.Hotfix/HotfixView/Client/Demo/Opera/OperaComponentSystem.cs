@@ -21,7 +21,7 @@ namespace ET.Client
             InputManager input = GlobelEngineScript.Default.GetInputManager();
             if (input.IsMouseButtonReleased( MouseButton.Left ))
             {
-                Line line = GlobalInitContext.Instance.Camera.ScreenPointToLine(input.MousePosition);
+                Line line = GlobelEngineScript.Default.Camera.ScreenPointToLine(input.MousePosition);
                 var result = GlobelEngineScript.Default.GetSimulation().Raycast(line.Start, line.End,filterFlags:self.mapMask,hitTriggers:true);
                 if (result.Succeeded)
                 {

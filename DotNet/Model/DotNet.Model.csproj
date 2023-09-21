@@ -49,9 +49,5 @@
       <Folder Include="Client\LockStep\" />
     </ItemGroup> 
     <ItemGroup>
-      <PackageReference Include="MemoryPack" Version="1.9.16" />
-      <PackageReference Include="MongoDB.Bson" Version="2.21.0" />
-      <PackageReference Include="MongoDB.Driver" Version="2.21.0" />
-      <PackageReference Include="MongoDB.Driver.Core" Version="2.21.0" />
     </ItemGroup>
 </Project>

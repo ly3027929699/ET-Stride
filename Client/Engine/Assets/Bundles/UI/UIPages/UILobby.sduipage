@@ -1,0 +1,74 @@
+!UIPageAsset
+Id: 367a5891-6a77-41be-93a7-030fcd0aa277
+SerializedVersion: {Stride: 2.1.0.1}
+Tags: []
+Design:
+    Resolution: {X: 1280.0, Y: 720.0, Z: 1000.0}
+Hierarchy:
+    RootParts:
+        - !Grid ref!! fdc1c3e1-961c-4c8a-97ce-b02b42f8cf29
+    Parts:
+        -   UIElement: !Button
+                Id: 1311c512-53c0-4bd9-9076-6c770d461626
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                DrawLayerNumber: 2
+                Width: 117.686386
+                Height: 39.440002
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {Left: 571.0, Top: 323.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: EnterMap
+                Content: !TextBlock ref!! e3492e8d-6bc9-4232-bf09-d7a3cf628e6c
+                PressedImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 2
+                NotPressedImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 1
+                MouseOverImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+        -   UIElement: !Canvas
+                Id: d40cb8ca-d900-4755-9b4b-47e1234a3fb5
+                DependencyProperties: {}
+                BackgroundColor: {R: 208, G: 208, B: 208, A: 255}
+                Width: 1277.0
+                Height: 719.0
+                Margin: {Left: -511.0, Top: -328.0, Right: -543.0, Bottom: -343.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Children:
+                    be4392bf38c3581885737b190f02e779: !Button ref!! 1311c512-53c0-4bd9-9076-6c770d461626
+        -   UIElement: !TextBlock
+                Id: e3492e8d-6bc9-4232-bf09-d7a3cf628e6c
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                HorizontalAlignment: Center
+                VerticalAlignment: Center
+                Margin: {}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Text: Enter Map
+                Font: ccfe1c73-d9d5-4f0c-a055-2e3f4c9a5eed:Bundles/Fonts/ChineseFont
+                TextSize: 20.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
+        -   UIElement: !Grid
+                Id: fdc1c3e1-961c-4c8a-97ce-b02b42f8cf29
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Width: 223.0
+                Height: 48.0
+                Margin: {Left: 514.0, Top: 330.0, Right: 543.0, Bottom: 342.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Children:
+                    5e3dafc1feadf7224a63336a2f34a343: !Canvas ref!! d40cb8ca-d900-4755-9b4b-47e1234a3fb5
+                RowDefinitions: {}
+                ColumnDefinitions: {}
+                LayerDefinitions: {}

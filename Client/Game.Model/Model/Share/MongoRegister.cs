@@ -43,6 +43,10 @@ namespace ET
             Dictionary<string, Type> types = CodeTypes.Instance.GetTypes();
             foreach (Type type in types.Values)
             {
+                if (type.Name.Contains("Main2NetClient_Login"))
+                {
+                    
+                }
                 if (!type.IsSubclassOf(typeof (Object)))
                 {
                     continue;

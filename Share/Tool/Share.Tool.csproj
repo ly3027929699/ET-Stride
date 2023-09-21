@@ -58,7 +58,6 @@
     <ItemGroup>
       <ProjectReference Include="..\..\Client\ThirdParty\ThirdParty.csproj" />
       <ProjectReference Include="..\..\DotNet\Core\DotNet.Core.csproj" />
-      <ProjectReference Include="..\..\DotNet\ThirdParty\DotNet.ThirdParty.csproj" />
     </ItemGroup>
     
     <ItemGroup>

@@ -1,0 +1,23 @@
+!PrefabAsset
+Id: 94e685d5-739e-4af5-8bec-8cd6cf1f1042
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+Hierarchy:
+    RootParts:
+        - ref!! f310201c-9aa8-40e1-ad5b-b0b5b7ddf72a
+    Parts:
+        -   Entity:
+                Id: f310201c-9aa8-40e1-ad5b-b0b5b7ddf72a
+                Name: UIHelp
+                Components:
+                    c598604f1e1ad54b555088231ded5091: !TransformComponent
+                        Id: cbc95644-42af-44ca-85e8-75864305f9b3
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    f6c9bbd76f8ee1223592a2d6f1772757: !UIComponent
+                        Id: b706c1fa-abfc-495b-9829-611809cbb827
+                        Page: 3964dfdc-bf97-4ac1-863e-b1ac768a0f91:Bundles/UI/UIPages/UIHelp
+                        Resolution: {X: 1280.0, Y: 720.0, Z: 1000.0}
+                        Size: {X: 1.28, Y: 0.72, Z: 1.0}

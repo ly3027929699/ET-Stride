@@ -1,0 +1,33 @@
+!UIPageAsset
+Id: 3964dfdc-bf97-4ac1-863e-b1ac768a0f91
+SerializedVersion: {Stride: 2.1.0.1}
+Tags: []
+Design:
+    Resolution: {X: 1280.0, Y: 720.0, Z: 1000.0}
+Hierarchy:
+    RootParts:
+        - !Grid ref!! 3c87ad94-49d1-49bd-bf14-0bb22759e5eb
+    Parts:
+        -   UIElement: !Grid
+                Id: 3c87ad94-49d1-49bd-bf14-0bb22759e5eb
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Margin: {}
+                Children:
+                    024da9b371769686367487208ae93fbb: !TextBlock ref!! 690c1efc-004b-44b2-84d3-23a4a1f6b20b
+                RowDefinitions: {}
+                ColumnDefinitions: {}
+                LayerDefinitions: {}
+        -   UIElement: !TextBlock
+                Id: 690c1efc-004b-44b2-84d3-23a4a1f6b20b
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Width: 287.0
+                Height: 192.0
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {}
+                Text: Left Click to Move
+                Font: ccfe1c73-d9d5-4f0c-a055-2e3f4c9a5eed:Bundles/Fonts/ChineseFont
+                TextSize: 20.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}

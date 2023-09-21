@@ -20,7 +20,7 @@ namespace ET.Client
 
         public static async ETTask<UI> CreateUIAsync(UIComponent uiComponent,string uiType, UILayer uiLayer)
         {
-            string assetsName = $"Assets/Bundles/UI/Demo/{uiType}.prefab";
+            string assetsName = $"Bundles/UI/UIPrefabs/{uiType}";
             ResourcesLoaderComponent resourcesLoaderComponent = uiComponent.Scene().GetComponent<ResourcesLoaderComponent>();
             if (resourcesLoaderComponent == null)
             {

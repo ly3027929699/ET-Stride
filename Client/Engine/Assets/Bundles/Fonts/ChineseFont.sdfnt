@@ -1,0 +1,7 @@
+!SpriteFont
+Id: ccfe1c73-d9d5-4f0c-a055-2e3f4c9a5eed
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+FontSource: !FileFontProvider
+    Source: !file ../../../Resources/Fonts/Alibaba-PuHuiTi-Regular.otf
+FontType: !RuntimeRasterizedSpriteFontType {}

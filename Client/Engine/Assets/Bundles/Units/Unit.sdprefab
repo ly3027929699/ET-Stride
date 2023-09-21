@@ -1,0 +1,33 @@
+!PrefabAsset
+Id: 524a7ea6-fc5d-432a-8c81-f76a2f99b0a4
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+Hierarchy:
+    RootParts:
+        - ref!! ebd3e08f-7169-4c64-9ef4-ad99153cb065
+    Parts:
+        -   Entity:
+                Id: 36a0f932-daad-4d2a-b55d-86ed32a52586
+                Name: mannequinModel
+                Components:
+                    5d2e50c26d6217114b24f900ae3b00e0: !TransformComponent
+                        Id: 38ae0211-43ba-43a1-8185-70c0766eea88
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 1.0, Z: 0.0, W: -4.371139E-08}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    1c32c24d1eb7106797745f76e71ee6a7: !ModelComponent
+                        Id: e6bf8b60-f71d-4f6d-8a9d-aef8221f63f5
+                        Model: f68ea240-695a-4de5-9884-60d77544fcd6:Models/mannequinModel
+                        Materials: {}
+        -   Entity:
+                Id: ebd3e08f-7169-4c64-9ef4-ad99153cb065
+                Name: Unit
+                Components:
+                    4f6721b0aac9dadbd5164282e18f4a17: !TransformComponent
+                        Id: 56d5c32e-2fcc-4ce3-8f13-be928ca8e178
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children:
+                            822f6b9777c4ee899627438983938b4f: ref!! 38ae0211-43ba-43a1-8185-70c0766eea88

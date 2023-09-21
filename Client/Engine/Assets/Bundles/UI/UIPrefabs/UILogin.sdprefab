@@ -1,0 +1,23 @@
+!PrefabAsset
+Id: de69a200-bcfd-447d-ac42-9d9252eb2180
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+Hierarchy:
+    RootParts:
+        - ref!! f2fb1c54-6cc9-45ab-b9e1-a156737933e0
+    Parts:
+        -   Entity:
+                Id: f2fb1c54-6cc9-45ab-b9e1-a156737933e0
+                Name: UI
+                Components:
+                    3a69a155e7998d50c4a1a83207774f53: !TransformComponent
+                        Id: 96e7ec1a-4d84-45c1-8e29-9341e8880b8f
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    6f31a02d4f8407557fbed01cd813ffb8: !UIComponent
+                        Id: 3ff009ea-8657-45e3-a20f-74d0732380b0
+                        Page: a52accb3-8330-4849-b362-f8af1ca2bffb:Bundles/UI/UIPages/UILogin
+                        Resolution: {X: 1280.0, Y: 720.0, Z: 1000.0}
+                        Size: {X: 1.28, Y: 0.72, Z: 1.0}

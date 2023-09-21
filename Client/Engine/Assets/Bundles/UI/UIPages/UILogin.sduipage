@@ -1,0 +1,178 @@
+!UIPageAsset
+Id: a52accb3-8330-4849-b362-f8af1ca2bffb
+SerializedVersion: {Stride: 2.1.0.1}
+Tags: []
+Design:
+    Resolution: {X: 1280.0, Y: 720.0, Z: 1000.0}
+Hierarchy:
+    RootParts:
+        - !Grid ref!! 3bc43f1c-7877-4277-bc47-eef0dc2708bd
+    Parts:
+        -   UIElement: !Button
+                Id: 049b6aa3-006b-4e77-8f59-b15d4e4eed96
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                DrawLayerNumber: 2
+                Width: 177.0
+                Height: 65.0
+                VerticalAlignment: Bottom
+                Margin: {Left: 549.0, Right: 554.0, Bottom: 207.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: LoginBtn
+                Content: !TextBlock ref!! 4ccb563b-b1b0-4ad6-993b-7d0ac986310b
+                PressedImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 2
+                NotPressedImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 1
+                MouseOverImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+        -   UIElement: !TextBlock
+                Id: 0cbbd5a6-6db5-4ac6-b95b-197bdda46587
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Width: 189.0
+                Height: 56.0
+                HorizontalAlignment: Left
+                Margin: {Left: 268.0, Top: 333.0, Bottom: 331.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Text: Passward
+                Font: ccfe1c73-d9d5-4f0c-a055-2e3f4c9a5eed:Bundles/Fonts/ChineseFont
+                TextSize: 40.0
+                TextColor: {R: 23, G: 18, B: 18, A: 255}
+                TextAlignment: Center
+        -   UIElement: !TextBlock
+                Id: 116ed12f-2101-4475-bcb8-e4b0b4ede580
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Width: 189.0
+                Height: 56.0
+                HorizontalAlignment: Left
+                VerticalAlignment: Top
+                Margin: {Left: 255.0, Top: 238.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Text: Account
+                Font: ccfe1c73-d9d5-4f0c-a055-2e3f4c9a5eed:Bundles/Fonts/ChineseFont
+                TextSize: 40.0
+                TextColor: {R: 23, G: 18, B: 18, A: 255}
+                TextAlignment: Center
+        -   UIElement: !EditText
+                Id: 19877b73-f3b0-4680-b728-ea139c702575
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                DrawLayerNumber: 5
+                CanBeHitByUser: true
+                Width: 443.0
+                Height: 58.0
+                Margin: {Left: 524.0, Top: 333.0, Right: 313.0, Bottom: 329.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: Password
+                Padding: {Left: 8.0, Top: 4.0, Right: 8.0, Bottom: 8.0}
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 42.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
+                TextAlignment: Center
+                ActiveImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 3
+                InactiveImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 4
+                MouseOverImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 5
+                CaretColor: {R: 240, G: 240, B: 240, A: 255}
+                CaretWidth: 1.0
+                SelectionColor: {R: 240, G: 240, B: 240, A: 255}
+                IMESelectionColor: {R: 240, G: 255, B: 240, A: 255}
+                CaretFrequency: 1.0
+                Text: 111
+        -   UIElement: !Grid
+                Id: 3bc43f1c-7877-4277-bc47-eef0dc2708bd
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Width: 1280.0
+                Height: 720.0
+                Margin: {}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Children:
+                    99f8b06740d78a3850d1960de5a6c292: !Canvas ref!! e710df35-0bf5-4a8a-b949-b0de8587d1b4
+                    17cc3eb2eeff3460e8c54583c545a1b4: !EditText ref!! 4b1dde81-866d-44cb-8ae7-ceee9bec9a2f
+                    5a5112b693d81c143b5bca6cacd322da: !EditText ref!! 19877b73-f3b0-4680-b728-ea139c702575
+                    c61acdbefa8ce99abc7a62bc1d81858e: !Button ref!! 049b6aa3-006b-4e77-8f59-b15d4e4eed96
+                    65b5a272a22282081aa829056b4895d8: !TextBlock ref!! 116ed12f-2101-4475-bcb8-e4b0b4ede580
+                    a3a04d4d8349d97ef5b067ecda52ac1f: !TextBlock ref!! 0cbbd5a6-6db5-4ac6-b95b-197bdda46587
+                RowDefinitions: {}
+                ColumnDefinitions: {}
+                LayerDefinitions: {}
+        -   UIElement: !EditText
+                Id: 4b1dde81-866d-44cb-8ae7-ceee9bec9a2f
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                DrawLayerNumber: 5
+                CanBeHitByUser: true
+                Width: 443.0
+                Height: 58.0
+                VerticalAlignment: Top
+                Margin: {Left: 524.0, Top: 238.0, Right: 313.0}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Name: Account
+                Padding: {Left: 8.0, Top: 4.0, Right: 8.0, Bottom: 8.0}
+                Font: c90f3988-0544-4cbe-993f-13af7d9c23c6:StrideDefaultFont
+                TextSize: 42.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
+                TextAlignment: Center
+                ActiveImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 3
+                InactiveImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 4
+                MouseOverImage: !SpriteFromSheet
+                    Sheet: 1be3340c-b797-4557-bff7-d9be92dfdb42:StrideUIDesigns
+                    CurrentFrame: 5
+                CaretColor: {R: 240, G: 240, B: 240, A: 255}
+                CaretWidth: 1.0
+                SelectionColor: {R: 240, G: 240, B: 240, A: 255}
+                IMESelectionColor: {R: 240, G: 255, B: 240, A: 255}
+                CaretFrequency: 1.0
+                Text: 123
+        -   UIElement: !TextBlock
+                Id: 4ccb563b-b1b0-4ad6-993b-7d0ac986310b
+                DependencyProperties: {}
+                BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Width: 156.99768
+                Height: 55.33203
+                HorizontalAlignment: Center
+                VerticalAlignment: Center
+                Margin: {}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Text: Login
+                Font: ccfe1c73-d9d5-4f0c-a055-2e3f4c9a5eed:Bundles/Fonts/ChineseFont
+                TextSize: 40.0
+                TextColor: {R: 240, G: 240, B: 240, A: 255}
+                TextAlignment: Center
+        -   UIElement: !Canvas
+                Id: e710df35-0bf5-4a8a-b949-b0de8587d1b4
+                DependencyProperties: {}
+                BackgroundColor: {R: 208, G: 208, B: 208, A: 255}
+                Margin: {}
+                MaximumWidth: 3.4028235E+38
+                MaximumHeight: 3.4028235E+38
+                MaximumDepth: 3.4028235E+38
+                Children: {}

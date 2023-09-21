@@ -11,7 +11,7 @@ namespace ET.Client
 		[EntitySystem]
 		private static void Awake(this LSCameraComponent self)
 		{
-			self.Camera = GlobalInitContext.Instance.Camera;
+			self.Camera = GlobelEngineScript.Default.Camera;
 			self.Camera.Entity.Transform.Rotation = Quaternion.RotationX(math.radians(20));
 		}
 		
