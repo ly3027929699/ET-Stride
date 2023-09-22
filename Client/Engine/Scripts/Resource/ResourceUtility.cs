@@ -7,7 +7,7 @@ namespace ET;
 
 public static class ResourceUtility
 {
-    public static Stride.Engine.Entity SpawnPrefabModel(this Stride.Engine.Scene rootScene, Prefab source, Stride.Engine.Entity attachEntity, Matrix localMatrix)
+    public static EngineEntity SpawnPrefabModel(this EngineScene rootScene, Prefab source, EngineEntity? attachEntity, Matrix localMatrix)
     {
         if (rootScene == null)
         {
@@ -17,11 +17,6 @@ public static class ResourceUtility
         if (source == null)
         {
             throw new ArgumentNullException(nameof (source));
-        }
-
-        if (attachEntity == null)
-        {
-            throw new ArgumentNullException(nameof (attachEntity));
         }
 
         // Clone

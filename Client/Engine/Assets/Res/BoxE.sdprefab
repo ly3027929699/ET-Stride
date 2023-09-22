@@ -1,0 +1,22 @@
+!PrefabAsset
+Id: fbd6b318-b1e1-42d7-9d3e-94d6e8677a64
+SerializedVersion: {Stride: 3.1.0.1}
+Tags: []
+Hierarchy:
+    RootParts:
+        - ref!! 8af39525-86c2-48e5-a99b-d686d060d3ef
+    Parts:
+        -   Entity:
+                Id: 8af39525-86c2-48e5-a99b-d686d060d3ef
+                Name: BoxE
+                Components:
+                    0e49e0efb07e3d7040af6e09ade3527e: !TransformComponent
+                        Id: 5ea5c67f-ef5e-49b0-8f68-798d18a6ba85
+                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
+                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
+                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
+                        Children: {}
+                    297b95d124b6e31da62bc85b40e9bbb4: !ModelComponent
+                        Id: 9d18197b-4b7b-4f27-9b63-a9ea7cb348dd
+                        Model: d0a8736e-23e3-4463-b0bb-66efd2b9ff1c:Models/BoxE
+                        Materials: {}

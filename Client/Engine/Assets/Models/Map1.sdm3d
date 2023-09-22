@@ -1,0 +1,20 @@
+!Model
+Id: 7d88df32-5dd5-4149-a3b4-2ca5d7e7af32
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+Source: !file ../../Resources/Models/Map1.obj
+Skeleton: null
+PivotPosition: {X: 0.0, Y: 0.0, Z: 0.0}
+Materials:
+    550f6b78ff10715790d69f4231f2561c:
+        Name: DefaultMaterial
+        MaterialInstance:
+            Material: null
+    f4f6354de3defa319456a0481dc57c0f:
+        Name: Urp
+        MaterialInstance:
+            Material: null
+DeduplicateMaterials: false
+Modifiers: {}
+~SourceHashes:
+    a7815d5d754634040729384881b4a29c~../../Resources/Models/Map1.obj: c966aed1a8fcdef6336e4cfba13755bf

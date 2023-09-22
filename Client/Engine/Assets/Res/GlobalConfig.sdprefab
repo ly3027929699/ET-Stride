@@ -18,6 +18,6 @@ Hierarchy:
                         Children: {}
                     d9307179dfb1a786a729de0ad170b58b: !ET.GlobalConfig,Engine
                         Id: f702fa89-9c88-44ca-ae38-204b347211a5
-                        CodeMode: Client
+                        SetupMode: Client
                         BuildType: Debug
                         AppType: Demo

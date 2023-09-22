@@ -5,8 +5,8 @@ using Unity.Mathematics;
 
 namespace ET.Client
 {
-    [EntitySystemOf(typeof(OperaComponent))]
-    [FriendOf(typeof(OperaComponent))]
+    [EntitySystemOf(typeof (OperaComponent))]
+    [FriendOf(typeof (OperaComponent))]
     public static partial class OperaComponentSystem
     {
         [EntitySystem]
@@ -19,18 +19,17 @@ namespace ET.Client
         private static void Update(this OperaComponent self)
         {
             InputManager input = GlobelEngineScript.Default.GetInputManager();
-            if (input.IsMouseButtonReleased( MouseButton.Left ))
+            if (input.IsMouseButtonReleased(MouseButton.Left))
             {
                 Line line = GlobelEngineScript.Default.Camera.ScreenPointToLine(input.MousePosition);
-                var result = GlobelEngineScript.Default.GetSimulation().Raycast(line.Start, line.End,filterFlags:self.mapMask,hitTriggers:true);
+                Simulation simulation = GlobelEngineScript.Default.GetSimulation();
+                var result = simulation.Raycast(line.Start, line.End, filterFlags: self.mapMask, hitTriggers: true);
                 if (result.Succeeded)
                 {
-                    unsafe
-                    {
-                        C2M_PathfindingResult c2MPathfindingResult = new C2M_PathfindingResult();
-                        c2MPathfindingResult.Position = result.Point.ToFloat3();
-                        self.Root().GetComponent<ClientSenderCompnent>().Send(c2MPathfindingResult);
-                    }
+                    C2M_PathfindingResult c2MPathfindingResult = new C2M_PathfindingResult();
+                    c2MPathfindingResult.Position = result.Point.ToFloat3();
+                    GlobelEngineScript.Default.DebugPoint(result.Point);
+                    self.Root().GetComponent<ClientSenderCompnent>().Send(c2MPathfindingResult);
                 }
             }
 
@@ -39,7 +38,7 @@ namespace ET.Client
                 CodeLoader.Instance.Reload().Coroutine();
                 return;
             }
-        
+
             if (input.IsKeyReleased(Keys.T))
             {
                 C2M_TransferMap c2MTransferMap = new();

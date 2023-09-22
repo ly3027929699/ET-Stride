@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
 using CommandLine;
 using Stride.Core;
+using Stride.Core.Mathematics;
 using Stride.Engine;
 using UnityEngine;
 
@@ -9,6 +11,7 @@ namespace ET
 {
 	public class Init: UpdateMonoBehaviour, ISingletonAwake
 	{
+		private Process? process;
 
 		void ISingletonAwake.Awake()
 		{
@@ -52,8 +55,12 @@ namespace ET
 			World.Instance.AddSingleton<ReourceExtension,Stride.Engine.Scene>(this.Entity.Scene);
 
 			ResourcesLoader resourcesLoader = World.Instance.AddSingleton<ResourcesLoader>();
-			GlobalConfig loadGlobalConfig = resourcesLoader.LoadGlobalConfig();
-			Options.Instance.AppType = loadGlobalConfig.AppType;
+			GlobalConfig globalConfig = resourcesLoader.LoadGlobalConfig();
+			Options.Instance.AppType = globalConfig.AppType;
+			if (globalConfig.SetupMode == SetupMode.ClientServer)
+			{
+				this.process = ProcessHelper.Run(@"../../../../../Bin/App.exe", "", @"../../../../../Bin", true);
+			}
 			
 			
 			CodeLoader codeLoader = World.Instance.AddSingleton<CodeLoader>();
@@ -73,6 +80,11 @@ namespace ET
 		{
 			base.Cancel();
 			World.Instance.Dispose();
+			if (process != null)
+			{
+				process.Close();
+				process.Dispose();
+			}
 		}
 	}
 }

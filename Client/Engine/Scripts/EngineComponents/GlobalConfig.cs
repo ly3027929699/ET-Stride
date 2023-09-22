@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace ET
 {
-    public enum CodeMode
+    public enum SetupMode
     {
         Client = 1,
         Server = 2,
@@ -19,8 +19,7 @@ namespace ET
     
     public class GlobalConfig: ScriptComponent
     {
-        //no use
-        public CodeMode CodeMode;
+        public SetupMode SetupMode;
         
         //no use
         public BuildType BuildType;
