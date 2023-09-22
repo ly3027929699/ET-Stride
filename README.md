@@ -1,4 +1,4 @@
-# links
+# Links
 ### Stride
   https://github.com/stride3d/stride MIT A pure C# 2D/3D game engine
 ### ET
@@ -10,5 +10,5 @@
   3. Selected DotNet/DotNet.App.csproj and click run to start the Server.
   4. Selected Client/Engine.Windows.csproj and click run to start the Client.
 
-# discrad
+# Discord
 https://discordapp.com/channels/1153880937470369914/1153880938338594959
