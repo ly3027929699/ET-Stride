@@ -94,6 +94,14 @@ Hierarchy:
                         Unit: null
                         UI: null
                         Camera: null
+                    e3ee46df1d968181212b5b8458046d0e: !ET.GameProfiler,Engine
+                        Id: 100a6fb1-d434-4103-a09b-dacdf9cdef3f
+                        Enabled: true
+                        TextColor: {R: 144, G: 238, B: 144, A: 255}
+                        RefreshTime: 500.0
+                        SortingMode: ByTime
+                        FilteringMode: Fps
+                        ResultPage: 1
         -   Entity:
                 Id: b516dc00-4c8d-48c0-8c80-9c920e049676
                 Name: Low
