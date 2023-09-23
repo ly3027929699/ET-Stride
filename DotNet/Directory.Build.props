@@ -1,6 +1,6 @@
 <Project>
   <PropertyGroup>
-    <NoWarn>0169,0649,3021,8981,9192,9193</NoWarn>
+    <NoWarn>0169,0649,3021,8981,9192,9193,NU1903</NoWarn>
     <ServerTargetFrameworks>.net7.0</ServerTargetFrameworks>
     <ServerLanguageVersion>11</ServerLanguageVersion>
   </PropertyGroup>
