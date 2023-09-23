@@ -26,7 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Analyzer Include="..\..\Share\Share.SourceGenerator\bin\Debug\Share.SourceGenerator.dll"/>
+    <Analyzer Include="..\..\Share\Dlls\Share.SourceGenerator.dll"/>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ThirdParty\ThirdParty.csproj" />

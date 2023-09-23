@@ -28,8 +28,8 @@
         </PackageReference>
     </ItemGroup>
 
-<!--    <Target Name="PostBuild" AfterTargets="PostBuildEvent">-->
-<!--        <Copy SourceFiles="$(TargetDir)/$(TargetName).dll" DestinationFolder="$(ProjectDir)/../../Unity/Assets/Plugins/" ContinueOnError="false" />-->
-<!--    </Target>-->
-
+    <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+        <Copy SourceFiles="$(TargetDir)$(TargetName).dll" DestinationFiles="..\Dlls\$(TargetName).dll"/>
+        <Copy SourceFiles="$(TargetDir)$(TargetName).pdb" DestinationFiles="..\Dlls\$(TargetName).pdb"/>
+    </Target>
 </Project>

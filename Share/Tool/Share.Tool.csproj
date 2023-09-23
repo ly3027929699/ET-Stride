@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFrameworks>.net8.0</TargetFrameworks>
+        <TargetFramework>.net7.0</TargetFramework>
         <LangVersion>10</LangVersion>
         <OutputType>Exe</OutputType>
         <ImplicitUsings>false</ImplicitUsings>
@@ -31,19 +31,16 @@
     </PropertyGroup>
     
     <ItemGroup>
-        <Compile Include="..\..\Unity\Assets\Mono\Core\**\*.cs">
-            <Link>Core\%(RecursiveDir)%(FileName)%(Extension)</Link>
-        </Compile>
         
-        <Compile Include="..\..\Unity\Assets\Scripts\Codes\Model\Share\Module\Config\**\*.cs">
+        <Compile Include="..\..\Client\Game.Model\Share\Module\Config\**\*.cs">
             <Link>Module\Config\%(RecursiveDir)%(FileName)%(Extension)</Link>
         </Compile>
 
-        <Compile Include="..\..\Unity\Assets\Scripts\Codes\Model\Share\Module\Log\**\*.cs">
+        <Compile Include="..\..\Client\Game.Model\Share\Module\Log\**\*.cs">
             <Link>Module\Log\%(RecursiveDir)%(FileName)%(Extension)</Link>
         </Compile>
 
-        <Compile Include="..\..\Unity\Assets\Scripts\Core\Network\OpcodeRangeDefine.cs">
+        <Compile Include="..\..\Client\Game.Core\Network\OpcodeRangeDefine.cs">
             <Link>Module\Message\OpcodeRangeDefine.cs</Link>
         </Compile>
     </ItemGroup>
