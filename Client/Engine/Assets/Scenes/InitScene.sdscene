@@ -11,7 +11,6 @@ Hierarchy:
         - ref!! c6cf2419-9e82-4eb7-9250-63287676c053
         - ref!! c146d91a-d62c-435a-aec2-19d2c1504c68
         - ref!! 7473e749-6892-4987-a7d8-e30771517174
-        - ref!! f498392c-1fe2-469d-b6f5-dceb559e0547
     Parts:
         -   Entity:
                 Id: 372bd394-0800-4b17-80a2-a12fe0fe62b1
@@ -131,16 +130,6 @@ Hierarchy:
                 Components:
                     dcf5864a700a84fe1f2cdb52f041bed8: !TransformComponent
                         Id: 417583e9-dbca-426d-9667-45ff0fe0e39c
-                        Position: {X: 0.0, Y: 0.0, Z: 0.0}
-                        Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
-                        Scale: {X: 1.0, Y: 1.0, Z: 1.0}
-                        Children: {}
-        -   Entity:
-                Id: f498392c-1fe2-469d-b6f5-dceb559e0547
-                Name: Entity
-                Components:
-                    5a28b0b771f05b521bb09564e6e533b8: !TransformComponent
-                        Id: 302b0c03-6e2a-4526-9c2b-288c594476da
                         Position: {X: 0.0, Y: 0.0, Z: 0.0}
                         Rotation: {X: 0.0, Y: 0.0, Z: 0.0, W: 1.0}
                         Scale: {X: 1.0, Y: 1.0, Z: 1.0}

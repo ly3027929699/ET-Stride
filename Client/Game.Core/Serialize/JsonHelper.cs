@@ -1,4 +1,5 @@
-﻿namespace ET;
+﻿#nullable enable
+namespace ET;
 
 public static class JsonHelper
 {

@@ -1,15 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <Import Project="..\..\ET.Build.props"/>
   <PropertyGroup>
     <TargetFrameworks>$(ClientTargetFrameworks)</TargetFrameworks>
     <LangVersion>$(ClientLanguageVersion)</LangVersion>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
-    <DefineConstants>TRACE;UNITY;UNITY_EDITOR</DefineConstants>
-  </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Stride.Engine" Version="4.1.0.1898" />
 

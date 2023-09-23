@@ -1,13 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-    <Import Project="..\..\ET.Build.props" />
+    
     <PropertyGroup>
         <TargetFrameworks>$(ServerTargetFrameworks)</TargetFrameworks>
+        <LangVersion>$(ServerLanguageVersion)</LangVersion>
         <ImplicitUsings>enable</ImplicitUsings>
-        <Nullable>disable</Nullable>
         <AssemblyName>Core</AssemblyName>
         <RootNamespace>ET</RootNamespace>
-        <LangVersion>$(ServerLanguageVersion)</LangVersion>
         <Nullable>annotations</Nullable>
     </PropertyGroup>
 

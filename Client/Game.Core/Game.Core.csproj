@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-    <Import Project="..\..\ET.Build.props"/>
+    
     <PropertyGroup>
         <TargetFrameworks>$(ClientTargetFrameworks)</TargetFrameworks>
         <LangVersion>$(ClientLanguageVersion)</LangVersion>
@@ -9,9 +9,6 @@
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     </PropertyGroup>
 
-    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
-        <DefineConstants>TRACE;UNITY</DefineConstants>
-    </PropertyGroup>
     <ItemGroup>
         <ProjectReference Include="..\ThirdParty\ThirdParty.csproj"/>
     </ItemGroup>

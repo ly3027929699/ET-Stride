@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <Import Project="..\..\ET.Build.props"/>
+  
   <PropertyGroup>
     <TargetFrameworks>$(ClientTargetFrameworks)</TargetFrameworks>
     <LangVersion>$(ClientLanguageVersion)</LangVersion>

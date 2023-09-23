@@ -1,0 +1,12 @@
+!SpriteFont
+Id: b7b03ecd-8fb6-49b9-8e4a-84f2a529bd28
+SerializedVersion: {Stride: 2.0.0.0}
+Tags: []
+FontSource: !FileFontProvider
+    Source: !file ../../../Resources/Fonts/Alibaba-PuHuiTi-Regular.otf
+FontType: !SignedDistanceFieldSpriteFontType
+    CharacterSet: !file ../../../Resources/Fonts/hanzi7000.txt
+    CharacterRegions:
+        2eec169e6600bdf605909bbdba2be67d:
+            Start: ' '
+            End: "\x7F"

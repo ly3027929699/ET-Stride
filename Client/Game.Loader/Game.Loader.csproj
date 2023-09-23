@@ -1,15 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-    <Import Project="..\..\ET.Build.props"/>
+    
     <PropertyGroup>
         <TargetFrameworks>$(ClientTargetFrameworks)</TargetFrameworks>
         <LangVersion>$(ClientLanguageVersion)</LangVersion>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
-    </PropertyGroup>
-
-    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
-        <DefineConstants>TRACE;UNITY_EDITOR</DefineConstants>
     </PropertyGroup>
 
     <ItemGroup>

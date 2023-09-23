@@ -1,9 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-    <Import Project="..\..\ET.Build.props" />
     <PropertyGroup>
-        <TargetFrameworks>$(ServerTargetFrameworks)</TargetFrameworks>
-        <LangVersion>$(ClientLanguageVersion)</LangVersion>
+        <TargetFrameworks>.net8.0</TargetFrameworks>
+        <LangVersion>10</LangVersion>
         <OutputType>Exe</OutputType>
         <ImplicitUsings>false</ImplicitUsings>
         <Nullable>disable</Nullable>

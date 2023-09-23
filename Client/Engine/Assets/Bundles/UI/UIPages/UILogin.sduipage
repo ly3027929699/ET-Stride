@@ -42,7 +42,7 @@ Hierarchy:
                 MaximumHeight: 3.4028235E+38
                 MaximumDepth: 3.4028235E+38
                 Text: Passward
-                Font: 8991fdf7-6f10-4617-af93-31f2d213226a:Bundles/UI/UIPages/SpriteFont
+                Font: b7b03ecd-8fb6-49b9-8e4a-84f2a529bd28:Bundles/Fonts/font
                 TextSize: 40.0
                 TextColor: {R: 23, G: 18, B: 18, A: 255}
                 TextAlignment: Center
@@ -54,12 +54,12 @@ Hierarchy:
                 Height: 56.0
                 HorizontalAlignment: Left
                 VerticalAlignment: Top
-                Margin: {Left: 255.0, Top: 238.0}
+                Margin: {Left: 268.0, Top: 238.0}
                 MaximumWidth: 3.4028235E+38
                 MaximumHeight: 3.4028235E+38
                 MaximumDepth: 3.4028235E+38
                 Text: Account
-                Font: 8991fdf7-6f10-4617-af93-31f2d213226a:Bundles/UI/UIPages/SpriteFont
+                Font: b7b03ecd-8fb6-49b9-8e4a-84f2a529bd28:Bundles/Fonts/font
                 TextSize: 40.0
                 TextColor: {R: 23, G: 18, B: 18, A: 255}
                 TextAlignment: Center
@@ -77,7 +77,7 @@ Hierarchy:
                 MaximumDepth: 3.4028235E+38
                 Name: Password
                 Padding: {Left: 8.0, Top: 4.0, Right: 8.0, Bottom: 8.0}
-                Font: 8991fdf7-6f10-4617-af93-31f2d213226a:Bundles/UI/UIPages/SpriteFont
+                Font: b7b03ecd-8fb6-49b9-8e4a-84f2a529bd28:Bundles/Fonts/font
                 TextSize: 42.0
                 TextColor: {R: 240, G: 240, B: 240, A: 255}
                 TextAlignment: Center
@@ -131,7 +131,7 @@ Hierarchy:
                 MaximumDepth: 3.4028235E+38
                 Name: Account
                 Padding: {Left: 8.0, Top: 4.0, Right: 8.0, Bottom: 8.0}
-                Font: 8991fdf7-6f10-4617-af93-31f2d213226a:Bundles/UI/UIPages/SpriteFont
+                Font: b7b03ecd-8fb6-49b9-8e4a-84f2a529bd28:Bundles/Fonts/font
                 TextSize: 42.0
                 TextColor: {R: 240, G: 240, B: 240, A: 255}
                 TextAlignment: Center
@@ -162,8 +162,8 @@ Hierarchy:
                 MaximumWidth: 3.4028235E+38
                 MaximumHeight: 3.4028235E+38
                 MaximumDepth: 3.4028235E+38
-                Text: Login
-                Font: 8991fdf7-6f10-4617-af93-31f2d213226a:Bundles/UI/UIPages/SpriteFont
+                Text: "Login(登录)"
+                Font: b7b03ecd-8fb6-49b9-8e4a-84f2a529bd28:Bundles/Fonts/font
                 TextSize: 40.0
                 TextColor: {R: 240, G: 240, B: 240, A: 255}
                 TextAlignment: Center

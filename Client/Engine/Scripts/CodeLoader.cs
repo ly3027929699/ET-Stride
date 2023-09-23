@@ -33,12 +33,12 @@ namespace ET
             byte[] pdbBytes = null!;
             if (Define.IsEditor)
             {
-                assBytes = await ReourceExtension.Instance.LoadBytesAsync("Res/Dlls/Game.Model.dll");
-                pdbBytes = await ReourceExtension.Instance.LoadBytesAsync("Res/Dlls/Game.Model.pdb");
             }
             else
             {
             }
+            assBytes = await ReourceExtension.Instance.LoadBytesAsync("Res/Dlls/Game.Model.dll");
+            pdbBytes = await ReourceExtension.Instance.LoadBytesAsync("Res/Dlls/Game.Model.pdb");
 
             this.assemblyLoadContext = new AssemblyLoadContext("ClientDomain", true);
             using Stream dllStream = new MemoryStream(assBytes);
@@ -62,12 +62,12 @@ namespace ET
             byte[] pdbBytes = null!;
             if (Define.IsEditor)
             {
-                assBytes = await ReourceExtension.Instance.LoadBytesAsync("Res/Dlls/Game.Hotfix.dll");
-                pdbBytes = await ReourceExtension.Instance.LoadBytesAsync("Res/Dlls/Game.Hotfix.pdb");
             }
             else
             {
             }
+            assBytes = await ReourceExtension.Instance.LoadBytesAsync("Res/Dlls/Game.Hotfix.dll");
+            pdbBytes = await ReourceExtension.Instance.LoadBytesAsync("Res/Dlls/Game.Hotfix.pdb");
 
             using Stream dllStream = new MemoryStream(assBytes);
             using Stream pdbStream = new MemoryStream(pdbBytes);

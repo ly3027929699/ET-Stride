@@ -13,11 +13,11 @@ Hierarchy:
                 DependencyProperties: {}
                 BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
                 DrawLayerNumber: 2
-                Width: 117.686386
-                Height: 39.440002
+                Width: 209.6864
+                Height: 71.44
                 HorizontalAlignment: Left
                 VerticalAlignment: Top
-                Margin: {Left: 571.0, Top: 323.0}
+                Margin: {Left: 512.0, Top: 314.0}
                 MaximumWidth: 3.4028235E+38
                 MaximumHeight: 3.4028235E+38
                 MaximumDepth: 3.4028235E+38
@@ -37,7 +37,7 @@ Hierarchy:
                 BackgroundColor: {R: 208, G: 208, B: 208, A: 255}
                 Width: 1277.0
                 Height: 719.0
-                Margin: {Left: -511.0, Top: -328.0, Right: -543.0, Bottom: -343.0}
+                Margin: {}
                 MaximumWidth: 3.4028235E+38
                 MaximumHeight: 3.4028235E+38
                 MaximumDepth: 3.4028235E+38
@@ -47,6 +47,8 @@ Hierarchy:
                 Id: e3492e8d-6bc9-4232-bf09-d7a3cf628e6c
                 DependencyProperties: {}
                 BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
+                Width: 195.3432
+                Height: 59.636253
                 HorizontalAlignment: Center
                 VerticalAlignment: Center
                 Margin: {}
@@ -54,16 +56,16 @@ Hierarchy:
                 MaximumHeight: 3.4028235E+38
                 MaximumDepth: 3.4028235E+38
                 Text: Enter Map
-                Font: ccfe1c73-d9d5-4f0c-a055-2e3f4c9a5eed:Bundles/Fonts/ChineseFont
+                Font: b7b03ecd-8fb6-49b9-8e4a-84f2a529bd28:Bundles/Fonts/font
                 TextSize: 20.0
                 TextColor: {R: 240, G: 240, B: 240, A: 255}
         -   UIElement: !Grid
                 Id: fdc1c3e1-961c-4c8a-97ce-b02b42f8cf29
                 DependencyProperties: {}
                 BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
-                Width: 223.0
-                Height: 48.0
-                Margin: {Left: 514.0, Top: 330.0, Right: 543.0, Bottom: 342.0}
+                Width: 793.0
+                Height: 344.0
+                Margin: {}
                 MaximumWidth: 3.4028235E+38
                 MaximumHeight: 3.4028235E+38
                 MaximumDepth: 3.4028235E+38

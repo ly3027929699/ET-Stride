@@ -1,5 +1,5 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-    <Import Project="..\..\ET.Build.props" />
+    
     <PropertyGroup>
         <TargetFrameworks>$(ServerTargetFrameworks)</TargetFrameworks>
         <RootNamespace>ET</RootNamespace>
@@ -26,10 +26,6 @@
     </PropertyGroup>
     <ItemGroup>
 
-        <Compile Include="..\..\Client\Game.Model\Model\Server\**\*.cs"> 
-            <Link>Server\%(RecursiveDir)%(FileName)%(Extension)</Link> 
-        </Compile>
-
         <Compile Include="..\..\Client\Game.Model\Model\Client\**\*.cs"> 
             <Link>Client\%(RecursiveDir)%(FileName)%(Extension)</Link>
         </Compile>
@@ -49,5 +45,6 @@
       <Folder Include="Client\LockStep\" />
     </ItemGroup> 
     <ItemGroup>
+        <PackageReference Include="MongoDB.Driver" Version="2.17.1"/>
     </ItemGroup>
 </Project>

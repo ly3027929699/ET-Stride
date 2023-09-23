@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     
-    <Import Project="..\..\ET.Build.props" />
+    
     <PropertyGroup>
         <TargetFrameworks>$(ServerTargetFrameworks)</TargetFrameworks>
         <RootNamespace>ET</RootNamespace>
@@ -28,10 +28,6 @@
         <Compile Include="..\..\Client\Game.Hotfix\Hotfix\Client\**\*.cs"> 
             <Link>Client\%(RecursiveDir)%(FileName)%(Extension)</Link>
         </Compile> 
-
-        <Compile Include="..\..\Client\Game.Hotfix\Hotfix\Server\**\*.cs">
-            <Link>Server\%(RecursiveDir)%(FileName)%(Extension)</Link>
-        </Compile>
 
         <Compile Include="..\..\Client\Game.Hotfix\Hotfix\Share\**\*.cs">
             <Link>Share\%(RecursiveDir)%(FileName)%(Extension)</Link> 
