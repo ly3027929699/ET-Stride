@@ -8,7 +8,7 @@ namespace ET.Client
         [EntitySystem]
         private static void Destroy(this EngineEntityComponent self)
         {
-            self.GameObject.Scene = null;
+            self.Entity.Scene = null;
         }
         
         [EntitySystem]

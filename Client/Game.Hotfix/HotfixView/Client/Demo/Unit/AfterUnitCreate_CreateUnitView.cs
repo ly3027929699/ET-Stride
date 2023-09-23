@@ -23,7 +23,7 @@ namespace ET.Client
             Stride.Engine.Entity entity = globalComponent.Global.Entity.Scene.SpawnPrefabModel(prefab,globalComponent.Global.Entity,Matrix.Identity);
 
             entity.Transform.Position = unit.Position.ToVector3();
-            unit.AddComponent<EngineEntityComponent>().GameObject = entity;
+            unit.AddComponent<EngineEntityComponent>().Entity = entity;
             unit.AddComponent<AnimatorComponent>();
             await ETTask.CompletedTask;
         }

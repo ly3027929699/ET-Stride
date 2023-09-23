@@ -50,11 +50,11 @@ namespace ET.Client
             LSInput input = unit.GetComponent<LSInputComponent>().LSInput;
             if (input.V != TSVector2.zero)
             {
-                AnimationController.RunSpeedEventKey.Broadcast(speed2);
+                // speed2;
             }
             else
             {
-                AnimationController.RunSpeedEventKey.Broadcast(0);
+                //0
             }
             self.t += GlobelEngineScript.Default.DeltaTime;
             self.Transform.Rotation = Quaternion.Lerp(self.Transform.Rotation, self.Rotation, self.t / 1f);

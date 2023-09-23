@@ -6,17 +6,17 @@ namespace ET.Client
     [ComponentOf(typeof(Unit))]
     public class EngineEntityComponent: Entity, IAwake, IDestroy
     {
-        private Stride.Engine.Entity gameObject;
+        private Stride.Engine.Entity entity;
 
-        public Stride.Engine.Entity GameObject
+        public Stride.Engine.Entity Entity
         {
             get
             {
-                return this.gameObject;
+                return this.entity;
             }
             set
             {
-                this.gameObject = value;
+                this.entity = value;
                 this.Transform = value.Transform;
             }
         }

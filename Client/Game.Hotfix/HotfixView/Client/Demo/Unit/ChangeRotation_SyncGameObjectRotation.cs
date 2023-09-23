@@ -13,7 +13,7 @@ namespace ET.Client
             {
                 return;
             }
-            var transform = gameObjectComponent.GameObject.Transform;
+            var transform = gameObjectComponent.Entity.Transform;
             transform.Rotation = unit.Rotation.ToQuaternion();
             await ETTask.CompletedTask;
         }

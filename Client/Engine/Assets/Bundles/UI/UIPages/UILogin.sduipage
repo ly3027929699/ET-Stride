@@ -13,10 +13,10 @@ Hierarchy:
                 DependencyProperties: {}
                 BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
                 DrawLayerNumber: 2
-                Width: 177.0
+                Width: 253.0
                 Height: 65.0
                 VerticalAlignment: Bottom
-                Margin: {Left: 549.0, Right: 554.0, Bottom: 207.0}
+                Margin: {Left: 524.0, Right: 503.0, Bottom: 207.0}
                 MaximumWidth: 3.4028235E+38
                 MaximumHeight: 3.4028235E+38
                 MaximumDepth: 3.4028235E+38

@@ -16,5 +16,9 @@ namespace ET.Client
 	public class AnimatorComponent : Entity, IAwake, IUpdate, IDestroy
 	{
 		public float speed;
+		public Unit unit = null!;
+		public MoveComponent? moveComponent;
+		public NumericComponent? numericComponent;
+		public AnimationController? animationController;
 	}
 }

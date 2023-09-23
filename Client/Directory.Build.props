@@ -1,11 +1,13 @@
 <Project>
   
   <PropertyGroup>
-    <DefineConstants>UNITY</DefineConstants>
     <ClientTargetFrameworks>.net6.0</ClientTargetFrameworks>
     <ClientLanguageVersion>10</ClientLanguageVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
-    <DefineConstants>TRACE;UNITY_EDITOR</DefineConstants>
+    <DefineConstants>TRACE;UNITY;UNITY_EDITOR</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DefineConstants>UNITY</DefineConstants>
   </PropertyGroup>
 </Project>

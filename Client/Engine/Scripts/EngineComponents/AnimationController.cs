@@ -14,7 +14,6 @@ namespace ET
 {
     public class AnimationController: SyncScript, IBlendTreeBuilder
     {
-        public static readonly EventKey<float> RunSpeedEventKey = new EventKey<float>();
 
         [Display("Animation Component")]
         public AnimationComponent AnimationComponent { get; set; }
@@ -51,8 +50,6 @@ namespace ET
         private AnimationClip animationClipWalkLerp2;
         private float walkLerpFactor = 0.5f;
 
-        // Internal state
-        private readonly EventReceiver<float> runSpeedEvent = new EventReceiver<float>(RunSpeedEventKey);
         private AnimationState state = AnimationState.Walking;
 
         float runSpeed;
@@ -160,7 +157,7 @@ namespace ET
         public override void Update()
         {
             // State control
-            runSpeedEvent.TryReceive(out runSpeed);
+            // runSpeedEvent.TryReceive(out runSpeed);
 
             switch (state)
             {
@@ -206,6 +203,11 @@ namespace ET
         {
             Walking,
             Punching,
+        }
+
+        public void SetSpeed(float runSpeed)
+        {
+            this.runSpeed = runSpeed;
         }
     }
 }

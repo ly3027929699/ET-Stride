@@ -48,7 +48,7 @@ Hierarchy:
                 DependencyProperties: {}
                 BackgroundColor: {R: 0, G: 0, B: 0, A: 0}
                 Width: 195.3432
-                Height: 59.636253
+                Height: 28.538132
                 HorizontalAlignment: Center
                 VerticalAlignment: Center
                 Margin: {}
@@ -59,6 +59,7 @@ Hierarchy:
                 Font: b7b03ecd-8fb6-49b9-8e4a-84f2a529bd28:Bundles/Fonts/font
                 TextSize: 20.0
                 TextColor: {R: 240, G: 240, B: 240, A: 255}
+                TextAlignment: Center
         -   UIElement: !Grid
                 Id: fdc1c3e1-961c-4c8a-97ce-b02b42f8cf29
                 DependencyProperties: {}
