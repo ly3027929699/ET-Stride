@@ -6,6 +6,8 @@
 * [Discord](#discord)
 <!-- TOC -->
 
+![ET-Stride (3)](https://github.com/ly3027929699/ET-Stride/assets/42492716/7253fc00-f3bc-4dbe-9c68-e2e0015a4368)
+
 # Links
   ### Stride
   https://github.com/stride3d/stride MIT A pure C# 2D/3D game engine
