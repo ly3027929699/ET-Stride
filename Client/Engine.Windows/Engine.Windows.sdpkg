@@ -26,7 +26,6 @@ RootAssets:
     - 7503f88d-8a74-4f26-a15f-5434b8c2e1ab:Res/GlobalConfig
     - 7d88df32-5dd5-4149-a3b4-2ca5d7e7af32:Models/Map1
     - 8611b1fa-98a1-47b1-a20d-5b4538e8608d:Scenes/InitScene
-    - 8991fdf7-6f10-4617-af93-31f2d213226a:Bundles/UI/UIPages/dont delete
     - 94e685d5-739e-4af5-8bec-8cd6cf1f1042:Bundles/UI/UIPrefabs/UIHelp
     - 99c48216-44bb-4569-b1db-fcdb123bcdea:Res/Dlls/Game.Model.pdb
     - a52accb3-8330-4849-b362-f8af1ca2bffb:Bundles/UI/UIPages/UILogin

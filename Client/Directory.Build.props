@@ -1,8 +1,8 @@
 <Project>
   
   <PropertyGroup>
-    <ClientTargetFrameworks>.net6.0</ClientTargetFrameworks>
-    <ClientLanguageVersion>10</ClientLanguageVersion>
+    <ClientTargetFrameworks>net8.0</ClientTargetFrameworks>
+    <ClientLanguageVersion>12</ClientLanguageVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DefineConstants>TRACE;UNITY;UNITY_EDITOR</DefineConstants>

@@ -4,7 +4,7 @@
         <TargetFrameworks>$(ClientTargetFrameworks)</TargetFrameworks>
         <LangVersion>$(ClientLanguageVersion)</LangVersion>
         <ImplicitUsings>enable</ImplicitUsings>
-        <Nullable>enable</Nullable>
+        <Nullable>annotations</Nullable>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     </PropertyGroup>
 

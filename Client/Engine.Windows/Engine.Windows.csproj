@@ -2,7 +2,7 @@
 
   
   <PropertyGroup>
-    <TargetFrameworks>$(ClientTargetFrameworks)</TargetFrameworks>
+    <TargetFramework>net8.0-windows7</TargetFramework>
     <LangVersion>$(ClientLanguageVersion)</LangVersion>
     <RuntimeIdentifier>win-x64</RuntimeIdentifier>
     <ApplicationIcon>Resources\Icon.ico</ApplicationIcon>
